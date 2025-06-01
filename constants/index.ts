@@ -6,6 +6,9 @@ export const LISTINGS_ENDPOINT = `${API_BASE_URL}/listings`;
 export const CURRENCY_SYMBOL = '$';
 export const DEFAULT_PAGINATION_LIMIT = 20;
 
+// Images
+export const HERO_IMAGE = '/assets/c811f30edfff8de9c9b079139dd9782018c7e7c0.jpg';
+
 // Filter Options
 export const PROPERTY_TYPES = [
   'Apartment',
@@ -13,6 +16,19 @@ export const PROPERTY_TYPES = [
   'Unique space',
   'Bed and breakfast',
   'Boutique hotel'
+];
+
+// Filter Categories
+export const FILTER_CATEGORIES = [
+  'Top Villa',
+  'Self Checkin',
+  'Beachfront',
+  'Pet Friendly',
+  'Mountain View',
+  'Private Pool',
+  'Luxury',
+  'City Center',
+  'Lakeside'
 ];
 
 // Placeholder Data (for development)
