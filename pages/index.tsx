@@ -2,18 +2,19 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Button from '../components/common/Button';
 import Card from '../components/common/Card';
+import Layout from '../components/layout/Layout';
 import { SAMPLE_LISTINGS } from '../constants';
 
 const Home: NextPage = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Head>
-        <title>ALX Listing App</title>
-        <meta name="description" content="Airbnb clone listing page" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <div className="container mx-auto px-4 py-8">
+        <Head>
+          <title>ALX Listing App</title>
+          <meta name="description" content="Airbnb clone listing page" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main>
         <h1 className="text-3xl font-bold text-center mb-8">
           Welcome to ALX Listing App
         </h1>
@@ -37,8 +38,8 @@ const Home: NextPage = () => {
             </Card>
           ))}
         </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   );
 };
 
